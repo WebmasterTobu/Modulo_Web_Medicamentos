@@ -18,7 +18,7 @@ $sql = "INSERT INTO recepcion(fecha,hora,codigo,numero_id,numero_factura,cantida
 if($conn ->query($sql) == TRUE){
     echo "<script>
             alert('Recepcion Registrada');
-            window.location= '../views/recepcion_productos.php'
+            window.location= '../views/consulta_recepcion.php'
 </script>";
 }else{
 echo "error:" .$sql ."<br>". $connect_error;

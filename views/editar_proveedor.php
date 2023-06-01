@@ -14,7 +14,7 @@
             <div class="col-4 offset-md-4 pt-4">
                 <fieldset class="border p-2">
                     <legend class="w-auto"><h1>Formulario Registro de Proveedores</h1></legend>
-                    <form method="post" action="../controllers/editar_proveedor.php" class="needs-validation">
+                    <form method="post" action="../controllers/editar_proveedor.php?id=<?php echo $_GET['id'];?>" class="needs-validation">
                         <br>
                         <div class="form-group">
                         <select name="tipo_documento" id="" class="form-select" aria-label="Default select example">
@@ -25,18 +25,17 @@
                             <option value="NIT_de_Extrangeria">NIT de Extrangeria</option>
                         </select></div><br>
                         <label for="numero_id">Numero id:</label>
-                        <input name="numero_id" type="numeroid" class="form-control" placeholder=""><br>
+                        <input name="numero_id" type="numeroid" class="form-control" value="<?php echo $numero_id?>"><br>
                         <label for="nombre">Nombre o Razon Social:</label>
-                        <input name="nombre" type="nombre" class="form-control" placeholder=""><br>
+                        <input name="nombre" type="nombre" class="form-control" value="<?php echo $nombre?>"><br>
                         <label for="direccion">Direccion:</label>
-                        <input name="direccion" type="direccion" class="form-control" placeholder=""><br>
+                        <input name="direccion" type="direccion" class="form-control" value="<?php echo $direccion?>"><br>
                         <label for="nombre_contacto">Nombre de Contacto:</label>
-                        <input name="nombre_contacto" type="nombrecontacto" class="form-control" placeholder=""><br>
+                        <input name="nombre_contacto" type="nombrecontacto" class="form-control" value="<?php echo $nombre_contacto?>"><br>
                         <label for="celular">Celular de Contacto:</label>
-                        <input name="celular" type="celular" class="form-control" placeholder=""><br>
+                        <input name="celular" type="celular" class="form-control" value="<?php echo $celular?>"><br>
                         <div class="dropdown-divider"></div>
                         <br>
-                        <a href="consulta_proveedor.php" class="btn btn-success">Regresar</a>
                         <button type="submit" class="btn btn-success ">Enviar</button>
                     </form>
                 </fieldset>

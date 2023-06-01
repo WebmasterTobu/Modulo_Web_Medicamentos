@@ -38,7 +38,7 @@ if($result->num_rows >0){
 <td >$direccion</td>
 <td >$nombre_contacto</td>
 <td>$celular</td>
- <td><a href='#' class= 'btn btn-success'><span class='material-icons'>edit</span></a></td>
+ <td><a href='../views/editar_proveedor.php' class= 'btn btn-success'><span class='material-icons'>edit</span></a></td>
  <td><a href='#' class='btn btn-success'><span class='material-icons'>delete</span></a></td>
 </tr>
 ";
